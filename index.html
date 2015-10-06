@@ -12,11 +12,10 @@
 <script>
 $(document).ready(function(){
 
-$(".teste").click(function(){
-// $("teste").on("click",function(){
-$.get("index.html", { name:"Donald", town:"Ducktown" });
-});
-
+	$('button').click(function() {
+    	var val = $(this).val();
+	$.get("index.html", {NEC:val});
+    	});
 });
 </script>
 
